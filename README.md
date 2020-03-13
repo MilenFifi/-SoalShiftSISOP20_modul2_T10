@@ -12,4 +12,4 @@ Oleh:
 ## Daftar Isi
 * [1. Crontab KW](#1-crontab-kw)
 * [2. Kiwa Mantappu Jiwa](#2-kiwa-mantappu-jiwa)
-* [3. multiprocessing](#3-multiprocessing)
+* [3. Multiprocessing](#3-multiprocessing)
