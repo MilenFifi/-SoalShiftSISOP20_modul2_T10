@@ -14,10 +14,9 @@ void a(char *tgl) {
 void b(char *tgl) {
 
   int status;
-  char moo[100], url[100];
-  time_t seconds;
-  time_t time2;
-  char tanggal2[80];
+  char url[100];
+  time_t seconds, time2;
+  char tanggal2[100];
 
 while ((wait(&status)) > 0);
         for (int i = 0; i < 20; i++)
