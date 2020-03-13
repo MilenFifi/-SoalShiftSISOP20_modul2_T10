@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <wait.h>
 
 int main() {
 
@@ -13,7 +12,3 @@ int main() {
     char *argv[] = {"mkdir", "-p", "/home/milenfifi/modul2/indomie", "/home/milenfifi/modul2/sedaap", NULL};
     execv("/bin/mkdir", argv);
   }
-  while(wait(NULL) != child_id);
-  sleep(5);
-
-  
