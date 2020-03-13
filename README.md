@@ -14,7 +14,7 @@ Oleh:
 * [2. Kiwa Mantappu Jiwa](#2-kiwa-mantappu-jiwa)
 * [3. Multiprocessing](#3-multiprocessing)
 
-# Kendala yang dialami :
+### Kendala yang dialami :
 1. Bobot soal yang sangat sulit bagi kami untuk dikerjakan
 2. Soal yang dibuat terlalu banyak cabangnya
 3. Kami belum terbiasa dengan fungsi-fungsi program c yang bisa digunakan di ubuntu sehingga kami susah untuk mengerjakan semua soal dan membutuhkan waktu yang cukup lama untuk mengerjakannya
