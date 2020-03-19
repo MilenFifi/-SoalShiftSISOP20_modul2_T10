@@ -12,3 +12,4 @@ int main() {
     char *argv[] = {"mkdir", "-p", "/home/milenfifi/modul2/indomie", "/home/milenfifi/modul2/sedaap", NULL};
     execv("/bin/mkdir", argv);
   }
+}
