@@ -176,7 +176,30 @@ else{ child_id3 = wait(NULL);		//remove or delete directory
           execv("/bin/rm", argv2);
 ```
 
+## 2. Multiprocessing
+### soal3.c
+Source Code : [soal2.c](https://github.com/milenfifi/SoalShiftSISOP20_modul2_T10/blob/master/soal3/soal3.c)<br/>
+**Soal:**\
+a. Program buatan jaya harus bisa membuat dua direktori di “/home/[USER]/modul2/”. Direktori yang pertama diberi nama “indomie”, lalu
+lima detik kemudian membuat direktori yang kedua bernama “sedaap”.<br/>
+b. Kemudian program tersebut harus meng-ekstrak file jpg.zip di direktori “/home/[USER]/modul2/”. Setelah tugas sebelumnya selesai, ternyata tidak hanya itu tugasnya.<br/>
+c. Diberilah tugas baru yaitu setelah di ekstrak, hasil dari ekstrakan tersebut (didalam direktori “home/[USER]/modul2/jpg/”) harus dipindahkan sesuai dengan pengelompokan, semua file harus dipindahkan ke “/home/[USER]/modul2/sedaap/” dan semua direktori harus dipindahkan ke “/home/[USER]/modul2/indomie/”. <br/>
+d. Untuk setiap direktori yang dipindahkan ke “/home/[USER]/modul2/indomie/” harus membuat dua file kosong. File yang pertama diberi nama “coba1.txt”, lalu 3 detik kemudian membuat file bernama “coba2.txt”. (contoh : “/home/[USER]/modul2/indomie/{nama_folder}/coba1.txt”).<br/>
+
+**Penjelasan Code:**\
+pembuatan folder indomie dan sedaap
+```
+int main() {
+
+  pid_t child_id = fork();
+  if (child_id == 0) {
+    char *argv[] = {"mkdir", "-p", "/home/milenfifi/modul2/indomie", "/home/milenfifi/modul2/sedaap", NULL};
+    execv("/bin/mkdir", argv);
+  }
+}
+```
+
 ### Kendala yang dialami :
 1. Bobot soal yang sangat sulit bagi kami untuk dikerjakan
 2. Soal yang dibuat terlalu banyak cabangnya
-3. Kami belum terbiasa dengan fungsi-fungsi program c yang bisa digunakan di ubuntu sehingga kami susah untuk mengerjakan semua soal dan membutuhkan waktu yang cukup lama untuk mengerjakannya
+3. Kami belum terbiasa dengan fungsi-fungsi program c yang bisa digunakan di ubuntu sehingga kami susah untuk mengerjakan semua soal dan membutuhkan waktu yang cukup lama untuk mengerjakannya sampai nomer 3 belum sempat tersentuh karena kebingungan di nomer 2
