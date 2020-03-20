@@ -176,9 +176,9 @@ else{ child_id3 = wait(NULL);		//remove or delete directory
           execv("/bin/rm", argv2);
 ```
 
-## 2. Multiprocessing
+## 3. Multiprocessing
 ### soal3.c
-Source Code : [soal2.c](https://github.com/milenfifi/SoalShiftSISOP20_modul2_T10/blob/master/soal3/soal3.c)<br/>
+Source Code : [soal3.c](https://github.com/milenfifi/SoalShiftSISOP20_modul2_T10/blob/master/soal3/soal3.c)<br/>
 **Soal:**\
 a. Program buatan jaya harus bisa membuat dua direktori di “/home/[USER]/modul2/”. Direktori yang pertama diberi nama “indomie”, lalu
 lima detik kemudian membuat direktori yang kedua bernama “sedaap”.<br/>
