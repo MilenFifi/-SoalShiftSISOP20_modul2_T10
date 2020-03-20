@@ -175,6 +175,8 @@ else{ child_id3 = wait(NULL);		//remove or delete directory
           char *argv2[4] = {"rm", "-r" , tgl , NULL};
           execv("/bin/rm", argv2);
 ```
+![Output Soal 2a](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/2a.PNG)
+![Output Soal 2b](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/2b.PNG)
 
 ## 3. Multiprocessing
 ### soal3.c
@@ -198,7 +200,7 @@ int main() {
   }
 }
 ```
-
+![Output Soal 3a](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/3a.PNG)
 ### Kendala yang dialami :
 1. Bobot soal yang sangat sulit bagi kami untuk dikerjakan
 2. Soal yang dibuat terlalu banyak cabangnya
