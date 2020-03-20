@@ -175,6 +175,9 @@ else{ child_id3 = wait(NULL);		//remove or delete directory
           char *argv2[4] = {"rm", "-r" , tgl , NULL};
           execv("/bin/rm", argv2);
 ```
+**Kendala yang ada saat pengerjaan no.2 :**\
+Pada saat running dilakukan zipping tidak bekerja dan langsung ke hapus dan kami masih belum memngatahui masalah/error apa yang terjadi membuat terbuangnya waktu yang ada untuk mencari akar permasalahannya<br/>
+
 Output Soal 2a<br/>
 ![Output Soal 2a](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/no2a.png)
 Output Soal 2b<br/>
