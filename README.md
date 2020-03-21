@@ -165,23 +165,19 @@ void c(char *tgl) {
   char yes[100];
   strcpy(yes, tgl);          //copy dari nama folder
   strcat(yes, ".zip");       //merge nama folder ditambah format.zip
-  char *argv[5] = {"zip", "-r" , yes , tgl , NULL};     //zipping recursive directory
-  execv("/bin/zip", argv);   //execute zip
+  execl("/usr/bin/zip", "zip", "-rm", yes, tgl, NULL);     //zipping recursive directory and delete after
 }
 ```
-kembali ke main dan melanjutkan nya yaitu prnghapusan folder awal setelah zipping
-```
-else{ child_id3 = wait(NULL);		//remove or delete directory	
-          char *argv2[4] = {"rm", "-r" , tgl , NULL};
-          execv("/bin/rm", argv2);
-```
+
 **Kendala yang ada saat pengerjaan no.2 :**\
 Pada saat running dilakukan zipping tidak bekerja dan langsung ke hapus dan kami masih belum memngatahui masalah/error apa yang terjadi membuat terbuangnya waktu yang ada untuk mencari akar permasalahannya<br/>
 
 Output Soal 2a<br/>
-![Output Soal 2a](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/no2a.png)
+![Output Soal 2a](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/soal2/no2a.png)
 Output Soal 2b<br/>
-![Output Soal 2b](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/no2b.png)
+![Output Soal 2b](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/soal2/no2b.png)
+Output Soal 2c<br/>
+![Output Soal 2b](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/soal2/no2c.png)
 
 ## 3. Multiprocessing
 ### soal3.c
@@ -206,7 +202,7 @@ int main() {
 }
 ```
 Output Soal 3a
-![Output Soal 3a](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/no3a.png)
+![Output Soal 3a](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/soal3/no3a.png)
 ### Kendala yang dialami :
 1. Bobot soal yang sangat sulit bagi kami untuk dikerjakan
 2. Soal yang dibuat terlalu banyak cabangnya
