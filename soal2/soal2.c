@@ -46,8 +46,7 @@ void c(char *tgl) {
   char yes[100];
   strcpy(yes, tgl);
   strcat(yes, ".zip");
-  char *argv[5] = {"zip", "-r" , yes , tgl , NULL};
-  execv("/bin/zip", argv);
+  execl("/usr/bin/zip", "zip", "-rm", yes, tgl, NULL);
 }
 int main(int argc, char **argv){
 
