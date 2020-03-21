@@ -69,6 +69,13 @@ if (child_id == 0) {
         execv("/bin/bash", argf);
         sleep(1);
 ```
+dengan file tambahan contoh test.sh yang berisi
+```
+#!/usr/bin/env bash
+mkdir test              //membuat folder bernama test
+```
+Output Soal 1<br/>
+![Output Soal 1](https://raw.githubusercontent.com/MilenFifi/SoalShiftSISOP20_modul2_T10/master/soal1/no1.png)
 
 ## 2. Kiwa Mantappu Jiwa
 ### soal2.c
