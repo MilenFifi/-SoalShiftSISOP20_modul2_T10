@@ -77,10 +77,6 @@ int main(int argc, char **argv){
       if(child_id3 == 0){
         c(tgl);
       }
-    else{ child_id3 = wait(NULL);		//remove or delete directory	
-          char *argv2[4] = {"rm", "-r" , tgl , NULL};
-          execv("/bin/rm", argv2);
-      }
     }
   }
 }
